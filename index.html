@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Organização Social — Início</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="images/logo.webp" alt="Logo da Organização Social" class="logo">
+      <nav aria-label="Menu principal">
+        <ul class="main-nav">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Transformando vidas através da tecnologia</h1>
+        <p>Somos uma organização sem fins lucrativos que promove inclusão digital e formação profissional.</p>
+        <img src="images/hero.webp" alt="Voluntários em ação" class="hero-img">
+      </div>
+    </section>
+
+    <section class="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title">Informações de contato</h2>
+        <address>
+          <p>Endereço: Rua Santa Elena, 460 — São Paulo/SP</p>
+          <p>Telefone: <a href="tel:+55 11 98046-2245">(11) 98046-2245</a></p>
+          <p>E‑mail: <a href="mailto:contato@organizacaosocial.org">contato@organizacaosocial.org</a></p>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="ano"></span> Organização Social — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

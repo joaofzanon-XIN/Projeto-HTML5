@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projetos Sociais — Organização Social</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="images/logo.webp" alt="Logo da Organização Social" class="logo">
+      <nav aria-label="Menu principal">
+        <ul class="main-nav">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="projetos-intro" aria-labelledby="projetos-title">
+      <div class="container">
+        <h1 id="projetos-title">Nossos projetos sociais</h1>
+        <p>Conheça iniciativas de inclusão digital, voluntariado e como você pode ajudar.</p>
+      </div>
+    </section>
+
+    <section class="lista-projetos" aria-labelledby="lista-title">
+      <div class="container">
+        <h2 id="lista-title">Projetos em destaque</h2>
+
+        <article class="projeto-card">
+          <img src="images/projetos1.webp" alt="Oficina de informática" width="320" height="180">
+          <h3>Oficina de Informática para Jovens</h3>
+          <p>Capacitação básica em software livre, ferramentas de produtividade e orientação de carreira.</p>
+          <p><strong>Como ajudar:</strong> Seja voluntário ou doe equipamentos.</p>
+        </article>
+
+        <article class="projeto-card">
+          <img src="images/projetos2.webp" alt="Doações e recondicionamento" width="320" height="180">
+          <h3>Doações e Recondicionamento</h3>
+          <p>Recebemos computadores usados, recondicionamos e entregamos a famílias em vulnerabilidade.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="voluntariado" aria-labelledby="voluntario-title">
+      <div class="container">
+        <h2 id="voluntario-title">Voluntariado</h2>
+        <p>Estamos sempre recrutando instrutores, mentores e apoiadores logísticos.</p>
+        <p>Para se inscrever, preencha o formulário em <a href="cadastro.html">Cadastro</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="ano2"></span> Organização Social</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('ano2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
